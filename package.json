@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sambatlim/api_generator.git"
+    "url": "https://github.com/sambatlim/npm-odoo-module.git"
   },
   "dependencies": {
     "chalk": "^4.1.1",

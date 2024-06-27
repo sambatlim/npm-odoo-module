@@ -1,8 +1,7 @@
 exports.generateController = (moduleName) => {
     return new Promise((resolve, reject) => {
         let templateToExport =
-            `
-# -*- coding: utf-8 -*-
+`# -*- coding: utf-8 -*-
 from odoo import http
 
 # class MyModule(http.Controller):
@@ -21,8 +20,7 @@ from odoo import http
 #     def object(self, obj, **kw):
 #         return http.request.render('${moduleName}.object', {
 #             'object': obj
-#         })
-    `;
+#         })`;
         resolve(templateToExport)
     })
 }

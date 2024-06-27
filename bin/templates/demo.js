@@ -1,8 +1,7 @@
 exports.generateDemo = (moduleName) => {
     return new Promise((resolve, reject) => {
         let templateToExport =
-            `
-<odoo>
+`<odoo>
     <data>
         <!--  -->
         <!--   <record id="object0" model="${moduleName}.${moduleName}"> -->
@@ -31,8 +30,7 @@ exports.generateDemo = (moduleName) => {
         <!--   </record> -->
         <!--  -->
     </data>
-</odoo>
-    `;
+</odoo>`;
         resolve(templateToExport)
     })
 }

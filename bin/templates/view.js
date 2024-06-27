@@ -1,8 +1,7 @@
 exports.generateTemplate = () => {
     return new Promise((resolve, reject) => {
         let templateToExport =
-            `
-<odoo>
+`<odoo>
     <data>
         <!-- <template id="listing"> -->
         <!--   <ul> -->
@@ -92,8 +91,7 @@ exports.generateView = (moduleName) => {
               action="${moduleName}.action_server"/>
     -->
   </data>
-</odoo>
-    `;
+</odoo>`;
         resolve(templateToExport)
     })
 }

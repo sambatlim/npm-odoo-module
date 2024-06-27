@@ -1,8 +1,7 @@
 exports.generateModel = (moduleName) => {
     return new Promise((resolve, reject) => {
         let templateToExport =
-            `
-# -*- coding: utf-8 -*-
+`# -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
 
@@ -16,8 +15,7 @@ from odoo import models, fields, api
 #
 #     @api.depends('value')
 #     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
-    `;
+#         self.value2 = float(self.value) / 100`;
         resolve(templateToExport)
     })
 }

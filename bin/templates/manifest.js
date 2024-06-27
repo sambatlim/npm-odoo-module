@@ -1,8 +1,7 @@
 exports.generateManifest = (moduleName) => {
     return new Promise((resolve, reject) => {
         let templateToExport =
-            `
-# -*- coding: utf-8 -*-
+`# -*- coding: utf-8 -*-
 {
     'name': "${moduleName}",
 
@@ -36,8 +35,7 @@ exports.generateManifest = (moduleName) => {
     'demo': [
         'demo/demo.xml',
     ],
-}
-    `;
+}`;
         resolve(templateToExport)
     })
 }
